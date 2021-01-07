@@ -1,0 +1,21 @@
+{
+    "name": "QA",
+    "actions": [
+        {
+            "name": "MyApprovalAction",
+            "actionTypeId": {
+                "category": "Approval",
+                "owner": "AWS",
+                "version": "1",
+                "provider": "Manual"
+            },
+            "inputArtifacts": [],
+            "outputArtifacts": [],
+            "configuration": {
+                "NotificationArn": "arn:aws:sns:us-east-2:80398EXAMPLE:MyApprovalTopic",
+                "ExternalEntityLink": "http://example.com",
+                "CustomData": "The latest changes include feedback from Bob."},
+            "runOrder": 1
+        }
+    ]
+}
